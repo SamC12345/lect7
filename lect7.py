@@ -7,7 +7,7 @@ artists=[("Halsey","halsey.jpg"),("J Cole","jcole.jpg"),("TheFatRat","fatrat.jpg
 @app.route('/')
 def index():
     print("in indexsdf")
-    return flask.render_template("index.html", len=len(artists), artists=artists)
+    return flask.render_template("index.html", len=len(artists), artists=artists, randomNum=random.randint(1,10))
     
 app.run(
     port=int(os.getenv('PORT', 8080)),

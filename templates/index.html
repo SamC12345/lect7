@@ -6,11 +6,14 @@
 
 <body>
     <h1>group's favorite artists</h1>
+
+    {%for i in range(randomNum)%}
     <ol>
         {%for i in range(0,len)%}
         <li> <img src="{{ url_for('static',filename=artists[i][1]) }}"></img> {{artists[i][0]}}</li>
         {%endfor%}
     </ol>
+    {%endfor%}
 </body>
 
 </html>
