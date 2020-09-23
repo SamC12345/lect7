@@ -4,6 +4,14 @@ body {
 }
 
 ol {
-    font-size: 36;
     background: purple;
+}
+
+li{
+    
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 5em;
 }
